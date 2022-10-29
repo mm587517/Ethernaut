@@ -1525,7 +1525,7 @@
   "resolved" "https://registry.npmjs.org/command-exists/-/command-exists-1.2.9.tgz"
   "version" "1.2.9"
 
-"command-line-args@^5.1.1":
+"command-line-args@^5.1.1", "command-line-args@^5.2.0":
   "integrity" "sha512-H4UfQhZyakIjC74I9d34fGYDwk3XpSr17QhEd0Q3I9Xq1CETHo4Hcuo87WyWHpAF1aSLjLRf5lD9ZGX2qStUvg=="
   "resolved" "https://registry.npmjs.org/command-line-args/-/command-line-args-5.2.1.tgz"
   "version" "5.2.1"
@@ -1535,7 +1535,7 @@
     "lodash.camelcase" "^4.3.0"
     "typical" "^4.0.0"
 
-"command-line-usage@^6.1.0":
+"command-line-usage@^6.1.0", "command-line-usage@^6.1.1":
   "integrity" "sha512-sH5ZSPr+7UStsloltmDh7Ce5fb8XPlHyoPzTpyyMuYCtervL65+ubVZ6Q61cFtFl62UyJlc8/JwERRbAFPUqgw=="
   "resolved" "https://registry.npmjs.org/command-line-usage/-/command-line-usage-6.1.3.tgz"
   "version" "6.1.3"
@@ -1727,6 +1727,14 @@
   "version" "3.0.1"
   dependencies:
     "path-type" "^4.0.0"
+
+"directory-tree@^3.3.1":
+  "integrity" "sha512-b92Uf33mHb+HwfC4CwvPxC78d1IQaXweg+jFUOw5JJpxrFSt516at1zm13JadVvtSl0cOYZ4zohJJ59wZw6B0A=="
+  "resolved" "https://registry.npmjs.org/directory-tree/-/directory-tree-3.3.1.tgz"
+  "version" "3.3.1"
+  dependencies:
+    "command-line-args" "^5.2.0"
+    "command-line-usage" "^6.1.1"
 
 "ecc-jsbn@~0.1.1":
   "integrity" "sha512-eh9O+hwRHNbG4BLTjEl3nw044CkGm5X6LoaCf7LPp7UU8Qrt47JYNi6nPX8xjW97TKGKm1ouctg0QSpZe9qrnw=="

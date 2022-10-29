@@ -1,10 +1,28 @@
 import { ethers } from "hardhat";
+import path from "path";
+
+const go = async () => {
+  const contracts: string[] = [];
+
+  const testFolder = "./contracts/";
+  const fs = require("fs");
+
+  fs.readdirSync(testFolder).forEach((file: string) => {
+    contracts.push(path.parse(file).name);
+  });
+
+  for (const contractName in contracts) {
+    console.log("Contract Name: ", contractName);
+    const name = await ethers.getContractFactory(contracts[contractName]);
+    const contract = await name.deploy();
+    console.log(`Contract ${contracts[contractName]}: ${contract.address}`);
+  }
+};
 
 async function main() {
-  const fallback = await ethers.getContractFactory("Fallback");
-  const contract = await fallback.deploy();
+  console.log("yo!");
 
-  console.log("Contract address: ", contract.address);
+  await go();
 }
 
 main()
